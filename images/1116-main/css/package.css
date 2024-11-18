@@ -1,0 +1,142 @@
+@import url("./common.css");
+
+/* using global heading bar,
+following selector will add or override
+some properties, be careful */
+.heading-bar {
+  background-color: lightseagreen;
+  color: white;
+}
+
+.honshu-heading {
+  background-color: var(--clr-primary-5);
+}
+
+.aso-san-heading {
+  background-color: red;
+}
+
+.hokkaido-heading {
+  background-color: lightgrey;
+}
+
+.discount-container {
+  width: 90%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 2rem;
+  /* box-shadow: var(--dark-shadow); */
+}
+
+.custom-card-container {
+  background-color: var(--clr-gray-1);
+  box-shadow: var(--mid-shadow);
+  border: 1px solid var(--clr-gray-4);
+}
+
+.custom-card-container h3 {
+  color: var(--clr-primary-5);
+  border: 2px solid white;
+}
+
+.square-frame {
+  width: 90%;
+  height: 90%;
+  border: 1px solid white;
+  z-index: 0;
+}
+
+.discount-code {
+  padding: 10px 15px;
+  background-color: var(--clr-primary-6);
+  color: var(--clr-white);
+}
+
+.custom-card-container h3.disable,
+.custom-card-container p.disable {
+  color: var(--clr-gray-4);
+}
+
+.custom-card-container p.expire {
+  color: red;
+  font-weight: bold;
+}
+
+.custom-card-container div.disable {
+  background-color: var(--clr-gray-4);
+  color: var(--clr-gray-5);
+}
+
+.discount-top-half-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.square-div {
+  position: relative;
+  z-index: -1;
+}
+
+.square-frame {
+  position: absolute;
+}
+
+@media (max-width: 997px) {
+  .discount-container {
+    grid-template-columns: 1fr;
+  }
+
+  .discount-container .discount-code {
+    font-size: 1.2rem;
+  }
+
+  .custom-card-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 40px;
+  }
+
+  .custom-card-container h3 {
+    font-size: 1.8rem;
+  }
+
+  .custom-card-container p {
+    padding-left: 0;
+    text-align: left;
+  }
+
+  .discount-top-half-container {
+    align-items: start;
+  }
+
+  .custom-card-images-container {
+    column-gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .custom-card-images-container {
+    grid-template-columns: 1fr;
+    row-gap: 20px;
+  }
+
+  .square-title-image-banner {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .square-title-image-banner .square-frame {
+    height: 80%;
+    width: 95%;
+  }
+
+  .square-title-image-banner .square-div {
+    aspect-ratio: auto;
+    margin: 0;
+    padding: 20px 0;
+  }
+}

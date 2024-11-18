@@ -3,6 +3,7 @@ import { navigationData } from "../data/navigationdata.js";
 // Function to render the navigation menu
 function renderNavigation() {
   const navList = document.getElementById("nav-list");
+  const currentPath = window.location.pathname; // Get the current path
 
   navigationData.forEach((item) => {
     const listItem = document.createElement("li");
@@ -31,6 +32,8 @@ function renderNavigation() {
       const submenu = document.createElement("ul");
       submenu.className = "submenu";
 
+      let hasActiveSubmenu = false; // Flag to check if any submenu item is active
+
       item.submenu.forEach((subitem) => {
         const submenuItem = document.createElement("li");
         submenuItem.className = "submenu-item";
@@ -53,8 +56,25 @@ function renderNavigation() {
         subLink.appendChild(subTitle);
         submenuItem.appendChild(subLink);
         submenu.appendChild(submenuItem);
+
+        // Check if the submenu link matches the current path
+        if (subitem.link === currentPath) {
+          hasActiveSubmenu = true; // Set flag to true if active submenu item is found
+        }
       });
       listItem.appendChild(submenu);
+
+      // If there's an active submenu item, add the active class to the parent item
+      if (hasActiveSubmenu) {
+        listItem.classList.add("active");
+      }
+    }
+
+    console.log(item.link + "/" + currentPath);
+
+    // Check if the link matches the current path and add the active class
+    if (item.link.includes(currentPath)) {
+      listItem.classList.add("active"); // Add active class to the current item
     }
 
     navList.appendChild(listItem);

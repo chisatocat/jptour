@@ -440,7 +440,7 @@ footer p {
     row-gap: 10px;
   }
 
-  .mobile-nav-list.active {
-    grid-template-columns: repeat(3, 1fr);
+  .mobile-nav-list-item-container h4 {
+    font-size: 0.8rem;
   }
 }

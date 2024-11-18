@@ -17,27 +17,21 @@ document.addEventListener("DOMContentLoaded", () => {
   outlets.forEach((outlet, index) => {
     outletContainer.innerHTML += `
         <div class="row featurette">
-            <div class="col-md-7 ${index % 2 === 0 ? "" : "order-md-2"}">
-                <h2 class="featurette-heading">${
-                  outlet.title
-                } <span class="text-muted">${outlet.subtitle}</span></h2>
-                <p class="lead">${outlet.description}</p>
+            <div class="col-md-7  ${index % 2 === 0 ? "" : "order-md-2"}">
+                <h2 class="featurette-heading mb-5">${outlet.title} <span class="text-muted">${
+      outlet.subtitle
+    }</span></h2>
+                <p class="lead mb-5">${outlet.description}</p>
                 <ul>
                     <li>地址：${outlet.address}</li>
                     <li>交通方式：${
-                      Array.isArray(outlet.transportation)
-                        ? outlet.transportation.join("<br/>")
-                        : outlet.transportation
+                      Array.isArray(outlet.transportation) ? outlet.transportation.join("<br/>") : outlet.transportation
                     }</li>
-                    <li>官網：<a href="${outlet.website}" target="_blank">${
-      outlet.website
-    }</a></li>
+                    <li>官網：<a href="${outlet.website}" target="_blank">${outlet.website}</a></li>
                 </ul>
             </div>
             <div class="col-md-5 ${index % 2 === 0 ? "" : "order-md-1"}">
-                <img src="${outlet.image}" alt="${
-      outlet.subtitle
-    }" class="img-fluid" /> 
+                <img src="${outlet.image}" alt="${outlet.subtitle}" class="img-fluid" /> 
             </div>
         </div>
         <hr class="featurette-divider"/>

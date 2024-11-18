@@ -13,12 +13,10 @@ body {
   overflow: hidden;
   background: #000;
   position: relative;
-  /*   display: flex;
-  justify-content: flex-start;
-  align-items: center;
- */
   display: grid;
   grid-template-columns: 1fr 1fr;
+
+  line-height: 1.6;
 }
 
 #particles-js {
@@ -143,6 +141,29 @@ button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+#message {
+  font-weight: bold;
+  font-size: 1rem;
+  color: black;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+}
+
+#alertBox {
+  display: none; /* Initially hide the alert box */
+  position: absolute;
+  top: 30px;
+  left: 30px;
+
+  padding: 20px;
+  background-color: lightgrey; /* Red background */
+  color: white; /* White text */
+  margin: 15px 0;
+  border: 1px solid lightslategray;
+  border-radius: 5px;
+  z-index: 1000;
 }
 
 @media (max-width: 997px) {

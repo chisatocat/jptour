@@ -51,12 +51,12 @@ export const navigationData = [
     submenu: [
       {
         title: "文化與靈性",
-        link: "./shikoku-culture.html",
+        link: "./shikoku_culture.html",
         image: "./img/menu/japan_spirit_preview.jpg",
       },
       {
         title: "地方節慶",
-        link: "./shikoku-festival.html",
+        link: "./shikoku_festival.html",
         image: "./img/menu/japan_culture_preview.jpg",
       },
     ],
@@ -68,7 +68,7 @@ export const navigationData = [
     submenu: [
       {
         title: "自然美景",
-        link: "./hokkaido-viewpoint.html",
+        link: "./hokkaido_viewpoint.html",
         image: "./img/menu/japan_scene_preview.jpg",
       },
       {

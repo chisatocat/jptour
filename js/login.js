@@ -104,11 +104,12 @@ guestBtn.addEventListener("click", () => {
 
 // Continue browsing as guest
 document.getElementById("continue-guest-btn").addEventListener("click", () => {
-  // guestAccessDiv.style.display = "none";
-  alert("You are now browsing as a guest.");
+  const message = document.getElementById("message");
+  message.style.opacity = "1";
 
   // Redirect to index.html after 3 seconds
   setTimeout(() => {
+    message.style.display = "none";
     window.location.href = "home.html"; // Redirect to index.html
-  }, 1000); // 3000 milliseconds equals 1 seconds
+  }, 3000); // 3000 milliseconds equals 1 seconds
 });

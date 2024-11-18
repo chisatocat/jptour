@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Create the jumbotron at the top
   spaContainer.innerHTML = `
-    <div class="jumbotron p-4 p-md-5 text-white rounded bg-info">
+    <div class="jumbotron p-4 p-md-5 text-dark rounded bg-warning">
         <div class="col-md-6 px-0">
             <h1 class="display-4 font-italic">九州溫泉</h1>
             <p class="lead my-3">
@@ -21,10 +21,10 @@ document.addEventListener("DOMContentLoaded", () => {
     spaContainer.innerHTML += `
         <div class="row featurette">
             <div class="col-md-7 ${index % 2 === 0 ? "" : "order-md-2"}">
-                <h2 class="featurette-heading">
+                <h2 class="featurette-heading mb-5">
                     ${index + 1} ${spa.title} <span class="text-muted"></span>
                 </h2>
-                <p class="lead">${spa.description}</p>
+                <p class="lead mb-5">${spa.description}</p>
                 <ul>
                     <li>地址：${spa.address}</li>
                     <li>泉質：${spa.waterType}</li>

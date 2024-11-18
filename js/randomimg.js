@@ -8,7 +8,5 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   // Set the random image as the background
-  document.getElementById(
-    "particles-js"
-  ).style.backgroundImage = `url('${getRandomImage()}')`;
+  document.getElementById("particles-js").style.backgroundImage = `url('${getRandomImage()}')`;
 });

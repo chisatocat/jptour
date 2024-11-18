@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>日旅社 Login Page</title>
+
+    <link rel="icon" type="image/png" href="./favicon/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./favicon/apple-touch-icon.png" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/whatsapp.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="login-container">
+      <div class="logo" href="#">
+        <h1>日旅社</h1>
+      </div>
+
+      <div id="user-signed-out" class="auth-container">
+        <h2 class="black">Sign Up / Log In</h2>
+        <form id="auth-form">
+          <input type="email" id="email" placeholder="Email" required />
+          <input type="password" id="password" placeholder="Password" required />
+          <button type="submit" id="sign-in-btn">Log In</button>
+          <button type="button" id="sign-up-btn">Sign Up</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <button id="guest-btn" class="guest-btn">Continue as Guest</button>
+      </div>
+
+      <div id="user-signed-in" class="auth-container auth-sign-up-container" style="display: none">
+        <h2>Welcome, <span id="user-email"></span></h2>
+        <button id="sign-out-btn">Sign Out</button>
+      </div>
+
+      <div id="guest-access" style="display: none">
+        <h2>Welcome, Guest!</h2>
+        <p>You can explore the site without logging in.</p>
+        <button id="continue-guest-btn">Continue Browsing</button>
+      </div>
+    </div>
+
+    <div class="whatsapp-icon">
+      <a href="https://wa.me/85298701386?text=我想查詢日本旅行團" target="_blank">
+        <img src="./img/icon/whatsapp.png" alt="Whatsapp icon" />
+      </a>
+    </div>
+
+    <script type="module" src="./js/login.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/snow.js"></script>
+  </body>
+</html>

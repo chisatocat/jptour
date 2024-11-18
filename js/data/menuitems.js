@@ -31,17 +31,17 @@ export const menuItems = [
     text: "九州 藝術與手工藝",
   },
   {
-    href: "./shikoku-culture.html",
+    href: "./shikoku_culture.html",
     imgSrc: "./img/menu/japan_spirit_preview.jpg",
     text: "四國 文化與靈性",
   },
   {
-    href: "./shikoku-festival.html",
+    href: "./shikoku_festival.html",
     imgSrc: "./img/menu/japan_culture_preview.jpg",
     text: "四國 地方節慶",
   },
   {
-    href: "./hokkaido-viewpoint.html",
+    href: "./hokkaido_viewpoint.html",
     imgSrc: "./img/menu/japan_scene_preview.jpg",
     text: "北海道 自然美景",
   },

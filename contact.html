@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="日旅社為香港旅遊公司擁有30年經驗，專營日本旅行團及自由行服務。我們提供全方位的服務，包括機票、酒店預訂、旅遊保險及必需品，讓您的日本之旅無憂無慮！"
+    />
+    <meta
+      name="title"
+      content="Expert Japan Tours & Free Travel Services | Hong Kong Japan Travel Company"
+    />
+    <meta
+      name="description"
+      content="With 30 years of experience, Hong Kong JP Tour Travel Company specializes in Japan tours and free travel services. We offer comprehensive services including flight bookings, hotel reservations, travel insurance, and essential items for your hassle-free trip to Japan!"
+    />
+
+    <title>專業日本旅行團及自由行服務 | 日旅社</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/whatsapp.css" />
+    <link rel="stylesheet" href="./css/common.css" />
+
+    <link rel="stylesheet" href="./css/contact.css" />
+  </head>
+  <body>
+    <nav id="nav-bar">
+      <div class="nav-container container-full">
+        <div class="contact-container">
+          <div class="contact-item-container"></div>
+
+          <div class="topbar-right-side-container">
+            <div class="user-info-container"></div>
+            <button class="toggle-button">☰</button>
+          </div>
+        </div>
+
+        <div class="logo my-1" href="#">
+          <h1>日旅社</h1>
+        </div>
+
+        <ul class="nav-list" id="nav-list"></ul>
+
+        <ul class="mobile-nav-list pt-3"></ul>
+      </div>
+    </nav>
+
+    <div class="banner-container">
+      <img src="./img/contact/contactus.jpg" alt="recurit banner" />
+    </div>
+
+    <header>
+      <h1>聯絡我們</h1>
+    </header>
+
+    <div class="contactus-wrapper">
+      <div class="contactus-general-info-container mt-3">
+        <div class="contactus-general-info-item-container">
+          <i class="fa-regular fa-envelope"></i>
+          <p>sales@japantour.com</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-solid fa-phone"></i>
+          <p>2711 9296</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-brands fa-whatsapp"></i>
+          <p>2711 1234</p>
+        </div>
+
+        <div class="contactus-general-info-item-container">
+          <i class="fa-solid fa-location-dot"></i>
+          <p>王子大廈8樓觀塘開源道71號</p>
+        </div>
+      </div>
+
+      <div class="contactus-container mb-3">
+        <div class="form-container">
+          <form
+            id="contact-form"
+            action="https://api.web3forms.com/submit"
+            method="POST"
+          >
+            <!-- Replace with your Access Key -->
+            <input
+              type="hidden"
+              name="access_key"
+              value="01dc0bde-00b7-4769-b300-645a9eeef2d0"
+            />
+            <label for="email">電子郵件</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="輸入有效的電子郵件"
+              required
+            />
+
+            <label for="name">姓名</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="您的名字"
+              required
+            />
+
+            <label for="message">訊息</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              placeholder="給我們的訊息"
+              required
+            ></textarea>
+
+            <button type="submit">提交</button>
+          </form>
+
+          <div class="success-message mt-2" id="success-message">
+            Your message has been sent successfully!
+          </div>
+          <div class="error-message mt-2" id="error-message">
+            There was an error sending your message. Please try again.
+          </div>
+        </div>
+
+        <div class="info-container">
+          <h2>取得聯繫</h2>
+          <p>
+            如果您有任何問題，隨時通過我們的表單或我們的社交媒體渠道與我們聯絡。
+          </p>
+
+          <div class="contactus-social-media-container">
+            <a href="www.facebook.com">
+              <i class="fa-brands fa-facebook"></i>
+            </a>
+
+            <a href="www.twitter.com">
+              <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+            <a href="www.youtube.com">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="instagram.com">
+              <i class="fa-brands fa-square-instagram"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="map-container">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1551.92776940549!2d114.22404178366305!3d22.31103276515172!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x34040145637bb059%3A0x792dd28d74fcf66c!2z6KeA5aGY6ZaL5rqQ6YGTNzHomZ_njovlrZDlpKflu4g!5e0!3m2!1szh-TW!2shk!4v1731608767688!5m2!1szh-TW!2shk"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </div>
+
+    <div class="whatsapp-icon"></div>
+
+    <footer>
+      <p id="footer"></p>
+    </footer>
+
+    <script src="./js/hero.js"></script>
+    <script src="./js/script.js"></script>
+    <script type="module" src="./js/islogin.js"></script>
+    <script type="module" src="./js/component/contactinfo.js"></script>
+    <script type="module" src="./js/component/navbar.js"></script>
+    <script type="module" src="./js/component/mobilemenu.js"></script>
+    <script type="module" src="./js/component/whatsapp.js"></script>
+    <script type="module" src="./js/component/footer.js"></script>
+  </body>
+</html>

@@ -1,0 +1,24 @@
+.container {
+  padding: 20px;
+}
+
+.jumbotron {
+  background-color: #17a2b8;
+  color: white;
+  padding: 2rem;
+  border-radius: 0.3rem;
+}
+
+.featurette-divider {
+  margin: 2rem 0;
+}
+
+.featurette {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+.featurette img {
+  max-width: 100%;
+  height: auto;
+}

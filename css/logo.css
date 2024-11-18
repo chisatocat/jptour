@@ -1,0 +1,23 @@
+/*******************/
+/* LOGO            */
+/*******************/
+
+.logo {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--clr-white);
+  background: url("../img/logo.svg") no-repeat center / cover;
+  width: 100px;
+  height: 100px;
+}
+
+.logo h1 {
+  font-size: 1.5rem;
+  color: white;
+}
+
+.logo i {
+  font-size: 2rem;
+}

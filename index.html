@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="日旅社為香港旅遊公司擁有30年經驗，專營日本旅行團及自由行服務。我們提供全方位的服務，包括機票、酒店預訂、旅遊保險及必需品，讓您的日本之旅無憂無慮！"
+    />
+    <meta
+      name="title"
+      content="Expert Japan Tours & Free Travel Services | Hong Kong Japan Travel Company"
+    />
+    <meta
+      name="description"
+      content="With 30 years of experience, Hong Kong JP Tour Travel Company specializes in Japan tours and free travel services. We offer comprehensive services including flight bookings, hotel reservations, travel insurance, and essential items for your hassle-free trip to Japan!"
+    />
+
+    <title>專業日本旅行團及自由行服務 | 日旅社</title>
+
+    <link
+      rel="icon"
+      type="image/png"
+      href="./favicon/favicon-96x96.png"
+      sizes="96x96"
+    />
+    <link rel="icon" type="image/svg+xml" href="./favicon/favicon.svg" />
+    <link rel="shortcut icon" href="./favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon/apple-touch-icon.png"
+    />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
+
+    <link rel="stylesheet" href="./css/login.css" />
+    <link rel="stylesheet" href="./css/whatsapp.css" />
+  </head>
+  <body>
+    <div id="particles-js"></div>
+
+    <div class="login-container">
+      <div class="logo" href="#">
+        <h1>日旅社</h1>
+      </div>
+
+      <div id="user-signed-out" class="auth-container">
+        <form id="auth-form">
+          <input type="email" id="email" placeholder="Email" required />
+          <input
+            type="password"
+            id="password"
+            placeholder="Password"
+            required
+          />
+          <button type="submit" id="sign-in-btn">Log In</button>
+          <button type="button" id="sign-up-btn">Sign Up</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <button id="guest-btn" class="guest-btn">Continue as Guest</button>
+      </div>
+
+      <div
+        id="user-signed-in"
+        class="auth-container auth-sign-up-container"
+        style="display: none"
+      >
+        <h2>Welcome, <span id="user-email"></span></h2>
+        <button id="sign-out-btn">Sign Out</button>
+      </div>
+
+      <div id="guest-access" style="display: none">
+        <h2>Welcome, Guest!</h2>
+        <p>You can explore the site without logging in.</p>
+        <button id="continue-guest-btn">Continue Browsing</button>
+      </div>
+    </div>
+
+    <div class="whatsapp-icon"></div>
+
+    <script type="module" src="./js/login.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="./js/snow.js"></script>
+    <script type="module" src="./js/randomimg.js"></script>
+    <script src="./js/component/whatsapp.js"></script>
+  </body>
+</html>

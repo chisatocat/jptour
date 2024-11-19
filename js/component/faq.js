@@ -11,6 +11,7 @@ function toggleAnswer(questionElement) {
   ) {
     // Set the height to the scroll height to animate
     answerElement.style.height = answerElement.scrollHeight + 100 + "px";
+
     icon.textContent = "-"; // Change icon to minus
   } else {
     // Set the height back to 0 for hiding

@@ -20,12 +20,6 @@ const tipData = [
   },
 
   {
-    question: "未出發，先儲錢",
-    questionIcon: "fa-solid fa-piggy-bank fa-2xl text-primary fa-fw",
-    answer: `出門旅行自然有一定使費，切忌「臨渴先嚟掘井」，到最後關頭才發現自己盤川不足，繼而選擇透支或借錢以支付旅費。想「駛得安心」，除了預先計好各樣旅費項目，亦應及早計劃儲錢。投委會「<a href="https://tool-budget.ifec.org.hk/tc/saving.html" target="_blank">儲蓄目標計算機</a>」，可助你早日實現旅遊大計。`,
-  },
-
-  {
     question: "減輕時差",
     questionIcon: "fa-solid fa-clock fa-2xl text-info fa-fw",
     answer: `乘搭長途機、去時差比較大的地方，可以帶備褪黑激素，可有效減輕時差症狀，改善睡眠品質。`,

@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
     <div class="jumbotron p-4 p-md-5 text-white rounded bg-primary">
         <div class="col-md-12 px-0">
             <h1 class="display-4 font-italic">本州五大必行Outlet</h1>
-            <p class="lead my-3">想喺日本瘋狂購物，緊係去Outlet尋寶！今次整理咗5間日本本州必行嘅Outlet，詳細介紹交通方式、必買品牌、附屬設施等實用資訊，第時計劃去日本旅行嗰陣，唔好唔記得喺入面揀想去嘅Outlet，買一大堆戰利品返屋企</p>
+            <p class="lead my-3">想喺日本瘋狂購物，緊係去Outlet尋寶！今次整理咗5間日本本州必行嘅Outlet，詳細介紹交通方式、必買品牌、附屬設施等實用資訊，第時計劃去日本旅行嗰陣，唔好唔記得喺入面揀想去嘅Outlet，買一大堆戰利品返屋企。</p>
         </div>
     </div>
     <hr class="featurette-divider"/>`;

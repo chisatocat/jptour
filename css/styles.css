@@ -402,7 +402,7 @@ footer p {
   }
 
   .nav-list-link-container a {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 
   .mobile-nav-list.active {
@@ -442,10 +442,6 @@ footer p {
     flex-direction: column;
     align-items: start;
     row-gap: 10px;
-  }
-
-  .mobile-nav-list-item-container h4 {
-    font-size: 0.8rem;
   }
 
   .hero .message {

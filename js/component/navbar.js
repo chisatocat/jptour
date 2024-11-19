@@ -58,7 +58,8 @@ function renderNavigation() {
         submenu.appendChild(submenuItem);
 
         // Check if the submenu link matches the current path
-        if (subitem.link === currentPath) {
+        // if (subitem.link === currentPath) {
+        if (subitem.link.includes(currentPath)) {
           hasActiveSubmenu = true; // Set flag to true if active submenu item is found
         }
       });
@@ -66,15 +67,13 @@ function renderNavigation() {
 
       // If there's an active submenu item, add the active class to the parent item
       if (hasActiveSubmenu) {
-        listItem.classList.add("active");
+        listItem.classList.add("current-page");
       }
     }
 
-    // console.log(item.link + "/" + currentPath);
-
     // Check if the link matches the current path and add the active class
     if (item.link.includes(currentPath)) {
-      listItem.classList.add("active"); // Add active class to the current item
+      listItem.classList.add("current-page"); // Add active class to the current item
     }
 
     navList.appendChild(listItem);

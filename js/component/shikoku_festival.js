@@ -25,9 +25,9 @@ document.addEventListener("DOMContentLoaded", () => {
                   index % 2 === 0 ? "" : "order-md-2"
                 }">
                     <h2 class="featurette-heading mb-5">${spot.title}
-                        <span class="text-muted">${spot.subtitle}</span>
+                        <p class="text-muted">${spot.subtitle}</p>
                     </h2>
-                    <p class="lead">${spot.description}</p>
+                    <p>${spot.description}</p>
                 </div>
                 <div class="col-md-5 ${index % 2 === 0 ? "" : "order-md-1"}">
                     <img src="${spot.image}" alt="${

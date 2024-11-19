@@ -20,9 +20,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="row featurette">
                 <div class="col-md-7 ${index % 2 === 0 ? "" : "order-md-2"}">
                     <h2 class="featurette-heading mb-5">${viewpoint.title}
-                        <span class="text-muted">${viewpoint.subtitle}</span>
+                        <p class="text-muted mt-2">${viewpoint.subtitle}</p>
                     </h2>
-                    <p class="lead mb-5">${viewpoint.description}</p>
+                    <p class="mb-5">${viewpoint.description}</p>
                     ${
                       viewpoint.tips
                         ? `<p class="text-info">貼士：${viewpoint.tips}</p>`

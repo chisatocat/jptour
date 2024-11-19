@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
     container.innerHTML += `
             <div class="row featurette">
                 <div class="col-md-7 ${index % 2 === 0 ? "" : "order-md-2"}">
-                    <h2 class="featurette-heading">${food.title}
-                        <span class="text-muted">${food.subtitle}</span>
+                    <h2 class="featurette-heading mb-3">${food.title}
+                        <span class="text-muted mb-3">${food.subtitle}</span>
                     </h2>
-                    <p class="lead">${food.description}</p>
+                    <p class="lead mb-5">${food.description}</p>
                     <p>${food.additionalInfo}</p>
                 </div>
                 <div class="col-md-5 ${index % 2 === 0 ? "" : "order-md-1"}">

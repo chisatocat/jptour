@@ -123,7 +123,7 @@
 }
 
 .about-us-services-section h2 {
-  font-size: 2.5rem;
+  font-size: 2rem;
   text-align: center;
 }
 
@@ -132,30 +132,63 @@
 }
 
 .erb-project-member-container {
+  width: 100%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   overflow: hidden;
 }
 
 .erb-project-member-container .erb-project-member-card:first-child {
-  background-color: var(--clr-primary-7);
+  background-color: var(--clr-primary-5);
   color: white;
   font-size: 1.5rem;
 }
 
 .erb-project-member-card {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: auto;
   display: flex;
   justify-content: space-around;
   align-items: center;
   flex-direction: column;
+  padding: 15px;
 }
 
 .erb-project-member-card img {
   width: 70%;
   height: 70%;
   object-fit: contain;
+}
+
+@media (max-width: 1200px) {
+  .about-us-gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .info-card-container,
+  .status-card-container {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+}
+
+@media (max-width: 997px) {
+  .about-us-gallery {
+    grid-template-columns: 1fr;
+  }
+
+  .erb-project-member-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .erb-project-member-card {
+    background-color: var(--clr-primary-3);
+  }
+
+  .info-card-container,
+  .status-card-container {
+    grid-template-columns: 1fr;
+  }
 }
 
 @media (max-width: 997px) {

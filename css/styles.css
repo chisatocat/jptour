@@ -410,6 +410,10 @@ footer p {
     visibility: visible;
     pointer-events: all;
   }
+
+  .hero .message {
+    font-size: 7rem;
+  }
 }
 
 @media (max-width: 768px) {
@@ -442,5 +446,9 @@ footer p {
 
   .mobile-nav-list-item-container h4 {
     font-size: 0.8rem;
+  }
+
+  .hero .message {
+    font-size: 5rem;
   }
 }

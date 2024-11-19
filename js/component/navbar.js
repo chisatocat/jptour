@@ -70,7 +70,7 @@ function renderNavigation() {
       }
     }
 
-    console.log(item.link + "/" + currentPath);
+    // console.log(item.link + "/" + currentPath);
 
     // Check if the link matches the current path and add the active class
     if (item.link.includes(currentPath)) {

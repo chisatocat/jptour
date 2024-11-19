@@ -35,13 +35,7 @@ const guestAccessDiv = document.getElementById("guest-access");
 
 // Auth state listener
 onAuthStateChanged(auth, (user) => {
-  console.log("onAuthStateChanged...");
-
   if (user) {
-    /* userSignedOutDiv.style.display = "none";
-    userSignedInDiv.style.display = "block";
-    guestAccessDiv.style.display = "none";
-    userEmailSpan.textContent = user.email; */
     window.location.href = "home.html";
   } else {
     userSignedOutDiv.style.display = "block";
@@ -57,7 +51,21 @@ signInBtn.addEventListener("click", (e) => {
   const password = document.getElementById("password").value;
 
   signInWithEmailAndPassword(auth, email, password)
-    .then(() => {
+    .then((userCredential) => {
+      const user = userCredential.user;
+
+      const username = email.split("@")[0];
+
+      // Store user data in local storage
+      const userData = {
+        uid: user.uid,
+        email: user.email,
+        displayName: user.displayName || username, // Replace with actual display name if available
+        // Add any other user info you need
+      };
+
+      localStorage.setItem("user", JSON.stringify(userData));
+
       window.location.href = "home.html"; // Redirect to home.html on successful login
     })
     .catch((error) => {

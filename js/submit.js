@@ -5,7 +5,7 @@ document
 
     const formData = new FormData(this); // Get form data
 
-    console.log("AAAAAAA");
+    alert(formData);
 
     fetch(this.action, {
       method: "POST",

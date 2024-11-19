@@ -1,12 +1,14 @@
 import shikokuCultureData from "../data/shikoku_culturedata.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  const shikokiCultureContainer = document.getElementById("shikoku-culture-container");
+  const shikokiCultureContainer = document.getElementById(
+    "shikoku-culture-container"
+  );
 
   // Create the jumbotron at the top
   shikokiCultureContainer.innerHTML = `
         <div class="jumbotron p-4 p-md-5 text-white rounded bg-primary m-5">
-            <div class="col-md-6 px-0">
+            <div class="col-md-12 px-0">
                 <h1 class="display-4 font-italic">四國的文化</h1>
                 <p class="lead">與靈性之旅</p>
                 
@@ -20,14 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
   shikokuCultureData.forEach((spot, index) => {
     shikokiCultureContainer.innerHTML += `
             <div class="row featurette">
-                <div class="mb-5 col-md-7 ${index % 2 === 0 ? "" : "order-md-2"}">
+                <div class="mb-5 col-md-7 ${
+                  index % 2 === 0 ? "" : "order-md-2"
+                }">
                     <h2 class="featurette-heading mb-5">${spot.title}
                         <span class="text-muted">${spot.subtitle}</span>
                     </h2>
                     <p class="lead">${spot.description}</p>
                 </div>
                 <div class="col-md-5 ${index % 2 === 0 ? "" : "order-md-1"}">
-                    <img src="${spot.image}" alt="${spot.title}" class="img-fluid"/> 
+                    <img src="${spot.image}" alt="${
+      spot.title
+    }" class="img-fluid"/> 
                 </div>
             </div>
             <hr class="featurette-divider"/>
